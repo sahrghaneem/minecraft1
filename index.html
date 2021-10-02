@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>minecraft</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>minecraft</title>
 </head>
+
 <body>
-    <div class="container">
-        
-      <div class="menu"> <button class="btn-minecraft start">Play Game</button>
-        </div>
-        
-      <div class="menuoptions">
-        <button class="btn-minecraft">Daily Challenge <button>
-        <button class="btn-minecraft">Options...</button>
-        <button class="btn-minecraft">Quit</button>
-          
-        </div>
-      </div>
+  <div class="container">
 
-      <div class="newgamepage"></div>
+    <div class="menu"> <button class="btn-minecraft start">Play Game</button>
+    </div>
 
-      <script src="minecraft.js" defer type="module"></script>
+    <div class="menuoptions">
+      <button class="btn-minecraft">Daily Challenge <button>
+          <button class="btn-minecraft">Options...</button>
+          <button class="btn-minecraft">Quit</button>
+
+    </div>
+  </div>
+  <div class="grid">
+    <div class="newgamepage"></div>
+    <div class="tools">
+
+      <input type="button" class="Axe">
+      <input type="button" class="Pickaxe">
+      <input type="button" class="Shovel">
+
+    </div>
+    <div class="bank">
+      <input type="button" class="dirt size" value="0">
+      <input type="button" class="grass size" value="0">
+      <input type="button" class="leaf size" value="0">
+      <input type="button" class="rock size" value="0">
+      <input type="button" class="tree size" value="0">
+
+
+    </div>
+  </div>
+  <script src="minecraft.js" defer type="module"></script>
 </body>
+
 </html>
