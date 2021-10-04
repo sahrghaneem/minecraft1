@@ -5,7 +5,7 @@
     margin:0;
   }
   
-  body{
+body{
       height: 100vh;
       width: 100vw;
       display: flex;
@@ -39,27 +39,30 @@
     margin-top: 2rem;
     margin-bottom: 1.25rem;
   }
+  /* .tile{
+    height : 1fr;
+    min-width: 1fr;
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+  } */
+  
   .Axe{
     /* border:0.20vmin; */
-    width: 4.98vw;
-    height: 10vmin;
+  
     background-size: cover;
     background-image: url('http://itc.yananas.com/git/minecraft/images/axe.png');
     background-repeat: no-repeat;
   }
 
   .Pickaxe{
-    /* border:0.20vmin; */
-    width: 4.98vw;
-    height: 10vmin;
+    /* border:0.20vmin; */  
     background-size: cover;
     background-image: url('http://itc.yananas.com/git/minecraft/images/pickaxe.png');
   }
 
   .Shovel{
     /* border:0.20vmin; */
-    width: 4.98vw;
-    height: 10vmin;
     background-size:cover;
     background-image: url('http://itc.yananas.com/git/minecraft/images/shovel.png');
   }
@@ -108,13 +111,18 @@
     background-image: url('http://itc.yananas.com/git/minecraft/images/cloud.png') ;
   }
   
-  .menuoptions {
+  .sky{
+    display: inline-block;
+    background-size: contain;
+    background-color: aqua;
+  }
+  .menuOptions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 33.3%;
   }
-  .menuoptions .btn-minecraft:first-child {
+  .menuOptions .btn-minecraft:first-child {
     margin-right: 10px;
   }
 
@@ -123,49 +131,67 @@
    height: 100%; 
    background: whitesmoke;
    display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   grid-template-rows: 1fr;
-   grid-column-gap: 10px;
+   /* grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: repeat(5, 1fr); */
+   grid-column-gap: 0px;
    grid-row-gap: 0px;
 
   }
-  .bank { 
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;  
-    width: 100%;
-    height: 100%;
+ 
+  .gameTile:hover {
+    box-shadow: inset white 0 0 1px 1px;
 }
-  .newgamepage { grid-area: 1 / 2 / 2 / 6;}
-  .tools { 
-    grid-area: 1 / 6 / 2 / 7;
+    
+    
+  .bank { 
+   
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: absolute;
+    top: 0vw;
+    left: 20vw;
+    justify-content:space-around;
     align-items: center;  
-    width: 100%;
-    height: 50%;
-    margin-top: 20px ;
+    background: rgba(255, 255, 255, 0.5);
+    width: 35vw;
+    height: 15vh;
+    border-radius: 5px;
+}
+.tool{
+  width: 5vmax;
+  height: 5vmax;
+  margin-left: 2vmax;
+}
+  .tools { 
+   
+    display: flex;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 2vmax;
+    align-items: center;  
+    width: 23vw;
+    height: 15vh;
+    
+    background: rgba(255, 255, 255, 0.5);
    }
 
   .size{
-    padding: 10px 15px;
-    margin: 8px;
-    font-size: 24px;
+    width: 5vmax;
+    height: 5vmax;
+    font-size: 2vmax;
     font-weight: 700;
     color: #14120f;
 }
 
-  .newgamepage{
+  .newGamePage{
+    
   background-color:lightblue; 
-  width: 100vmin;
-  height: 100vmin;
+  width: 100vw;
+  height: 100vh;
   /* position:relative; */
   display: grid;
   grid-template-rows: repeat(21,1fr);
-  grid-template-columns: repeat(21,1fr);
+  grid-template-columns: repeat(35,1fr);
   /* left: 0;
   top: 0; */
  }
